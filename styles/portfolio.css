@@ -58,12 +58,12 @@ body{
 }
 @media all and (max-width: 768px) {
     /* tablet Query */
-        .nav-bar {
+    .nav-bar {
 
-        }
-
-        .nav-bar > li {
-            flex-basis: 50%;
-        }
     }
+
+    .nav-bar > li {
+        flex-basis: 50%;
+    }
+}
 

@@ -4,8 +4,48 @@
 .js-loading *:after {
     animation-play-state: paused !important;
 }
-body{
+body {
     font-family: "Fjalla One", sans-serif;
+    color: #333;
+    background-color: #9fb2bf;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='303' height='36.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23333333' stroke-width='6.7' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");}
+
+/* flex containers */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    border-radius: 3px;
+
+
+}
+.sub-container-split{
+    flex: 1;
+    margin: auto 0.5%;
+    border-radius: 3px;
+    background: whitesmoke;
+
+}
+.sub-container-split h1{
+    font-size: 2.5em;
+}
+.info{
+    flex-direction: column;
+    list-style: none;
+    background: whitesmoke;
+
+}
+.info h2, h3{
+    padding:8px;
+
+}
+.multi-points ul{
+    list-style: none;
+    text-align: center;
 }
 /* Nav bar content */
 .nav-bar{
@@ -15,7 +55,9 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: transparent;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    font-size: 1.5em;
 }
 .nav-bar li{
     flex: 1;
@@ -33,19 +75,67 @@ body{
 }
 .nav-item a:hover, .nav-toggle:hover {
     color: #a0d3cc;
-    transition: 1s;
+    transition: .5s;
 }
 .nav-toggle{
     display: none;
-    color: #333;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     cursor: pointer;
 }
+#logo{
+    height: auto;
+   width: 100%;
+}
+.no-back{
+    background: transparent;
+}
+
+/* animations */
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fade-in-right {
+    -webkit-animation-name: fade-in-right;
+    animation: fade-in-right 1s both ;
+}
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fade-in-left {
+    -webkit-animation-name: fade-in-left;
+    animation: fade-in-left 1s both ;
+}
+
 
 @media all and (max-width: 400px) {
     /* Mobile Query */
+    .container{
+        flex-direction: column;
+    }
     .nav-bar > li {
         flex-basis: 100%;
     }
@@ -58,11 +148,14 @@ body{
 }
 @media all and (max-width: 768px) {
     /* tablet Query */
-        .nav-bar {
+    .container{
+        flex-direction: column;
+    }
+    .nav-bar {
 
-        }
+    }
 
-        .nav-bar > li {
+    .nav-bar > li {
             flex-basis: 50%;
         }
     }

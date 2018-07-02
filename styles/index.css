@@ -7,8 +7,11 @@
 body {
     font-family: "Fjalla One", sans-serif;
     color: #333;
-    background-color: #9fb2bf;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='303' height='36.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23333333' stroke-width='6.7' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");}
+    background-color: lightgray;
+    background-image: url("../assets/concrete-texture.png");
+    background-repeat: repeat;
+
+}
 
 /* flex containers */
 
@@ -20,14 +23,20 @@ body {
     width: 85%;
     margin: auto;
     border-radius: 3px;
-
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(51,51,51,0.77);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(51,51,51,0.77);
+    box-shadow: 0px 5px 5px 0px rgba(51,51,51,0.77);
+    background-color: whitesmoke;
 
 }
 .sub-container-split{
     flex: 1;
     margin: auto 0.5%;
     border-radius: 3px;
-    background: whitesmoke;
+    text-align: center;
+
+
+
 
 }
 .sub-container-split h1{
@@ -36,7 +45,7 @@ body {
 .info{
     flex-direction: column;
     list-style: none;
-    background: whitesmoke;
+
 
 }
 .info h2, h3{
@@ -55,7 +64,6 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: whitesmoke;
     border-radius: 3px;
     font-size: 1.5em;
 }
@@ -68,6 +76,7 @@ body {
 }
 .nav-item a{
     display: block;
+    position: relative;
     color: #333;
     text-align: center;
     padding: 14px 16px;
@@ -76,6 +85,26 @@ body {
 .nav-item a:hover, .nav-toggle:hover {
     color: #a0d3cc;
     transition: .5s;
+
+}
+.nav-item > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #DE3D40;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.nav-item > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 .nav-toggle{
     display: none;
@@ -91,7 +120,25 @@ body {
 .no-back{
     background: transparent;
 }
+/* MISC STYLING */
+.contact-btn{
+    text-align: center;
+    background-color: #a0d3cc;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(51,51,51,0.77);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(51,51,51,0.77);
+    box-shadow: 0px 5px 5px 0px rgba(51,51,51,0.77);
 
+}
+.contact-btn a{
+    font-size: 2em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
 /* animations */
 @keyframes fade-in-right {
     from {
@@ -104,6 +151,17 @@ body {
         opacity: 1;
         -webkit-transform: none;
         transform: none;
+    }
+}
+@keyframes fade-in{
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+
     }
 }
 

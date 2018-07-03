@@ -5,6 +5,7 @@
     animation-play-state: paused !important;
 }
 body {
+
     font-family: "Fjalla One", sans-serif;
     color: #333;
     background-color: lightgray;
@@ -41,18 +42,14 @@ body {
 .container-portfolio{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
+    align-items: center;
     text-align: center;
     width: 100%;
     margin: auto;
+    padding: 0 4px;
 
 }
-.sub-container-portfolio{
-    width: 50%;
-    flex: 1;
-    margin: auto;
-}
+
 .info{
     flex-direction: column;
     list-style: none;
@@ -128,6 +125,8 @@ body {
 .no-back{
     background: transparent;
 }
+/* IMAGE CAROUSEL */
+
 /* MISC STYLING */
 .contact-btn{
     text-align: center;

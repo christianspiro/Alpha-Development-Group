@@ -187,6 +187,9 @@ footer {
 }
 footer a{
     align-self: flex-end;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
 }
 .subheading{
     font-size: 1.5em;

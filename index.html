@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alpha Development Group is a Front End Development agency operating out of Toronto, Canada. We specialize in operating with small businesses.">
     <script>(function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
@@ -18,7 +19,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <title>Alpha Development Group</title>
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="output.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
           integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
@@ -120,36 +121,22 @@
     </section>
     <br>
     <section id="portfolio">
-        <div class="container-xl">
-                    <div class="portfolio-item">
-                        <br>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x250"></a>
-                        <h3> Sample Work</h3>
-                        <p>Tidbit about it</p>
-                    </div>
 
-                    <div class="portfolio-item">
-                        <br>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x250"></a>
-                        <h3> Sample Work</h3>
-                        <p>Tidbit about it</p>
-                    </div>
+            <div class="carousel">
+                <h2 id="flavor-text"></h2>
+                <figure>
+                    <img class="portfolio-img" src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="Sample Photo" data-img="0">
+                    <img class="portfolio-img" src="https://source.unsplash.com/EbuaKnSm8Zw/800x533" alt="Sample Photo" data-img="1">
+                    <img class="portfolio-img" src="https://source.unsplash.com/nvzvOPQW0gc/800x533" alt="Sample Photo" data-img="2">
+                    <img class="portfolio-img" src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="Sample Photo" data-img="3">
+                </figure>
+                <br>
+                <nav>
+                    <button class="nav next">Next</button>
 
-                    <div class="portfolio-item">
-                        <br>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x250"></a>
-                        <h3> Sample Work</h3>
-                        <p>Tidbit about it</p>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <br>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x250"></a>
-                        <h3> Sample Work</h3>
-                        <p>Tidbit about it</p>
-                    </div>
-        </div>
-
+                    <button class="nav prev">Previous</button>
+                </nav>
+            </div>
     </section>
     <br>
 <section id="contact">
@@ -182,5 +169,6 @@
 
 
 <script src="scripts/index.js"></script>
+<script src="scripts/carousel.js"></script>
 </body>
 </html>

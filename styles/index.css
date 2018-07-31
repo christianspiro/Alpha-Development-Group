@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 .js-loading *,
 .js-loading *:before,
@@ -6,18 +5,18 @@
     -webkit-animation-play-state: paused !important;
     animation-play-state: paused !important;
 }
+
 body {
     font-family: 'IBM Plex Mono', monospace;
     color: #333;
     background-color: lightgray;
     background-image: url("../assets/concrete-texture.png");
     background-repeat: repeat;
-
 }
 
 /* flex containers */
 
-.container{
+.container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -32,11 +31,9 @@ body {
     width: 85%;
     margin: auto;
     border-radius: 3px;
-
-
-
 }
-.container-xl{
+
+.container-xl {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -53,7 +50,8 @@ body {
     margin: auto;
     width: 100%;
 }
-.sub-container-split{
+
+.sub-container-split {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -61,25 +59,32 @@ body {
     border-radius: 3px;
     text-align: center;
 }
-.sub-container-split h1{
+
+.sub-container-split h1 {
     font-size: 2.5em;
 }
-.info{
+
+.info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     list-style: none;
 }
-.info h2, h3{
-    padding:8px;
+
+.info h2,
+h3 {
+    padding: 8px;
 }
-.multi-points ul{
+
+.multi-points ul {
     list-style: none;
     text-align: center;
 }
+
 /* Nav bar content */
-.nav-bar{
+
+.nav-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -92,16 +97,19 @@ body {
     border-radius: 3px;
     font-size: 1.5em;
 }
-.nav-bar li{
+
+.nav-bar li {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
 }
-.nav-item{
+
+.nav-item {
     text-align: center;
     margin: auto;
 }
-.nav-item a{
+
+.nav-item a {
     display: block;
     position: relative;
     color: #333;
@@ -109,14 +117,16 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
-.nav-item a:hover, .nav-toggle:hover {
+
+.nav-item a:hover,
+.nav-toggle:hover {
     color: #a0d3cc;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-
 }
-.nav-item > a:before {
+
+.nav-item>a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -132,28 +142,34 @@ body {
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-.nav-item > a:hover:before {
+
+.nav-item>a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
-.nav-toggle{
+
+.nav-toggle {
     display: none;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     cursor: pointer;
 }
-#logo{
+
+#logo {
     height: auto;
     width: 100%;
 }
-.no-back{
+
+.no-back {
     background: transparent;
 }
+
 /* Portfolio Gallery */
-.portfolio-item{
+
+.portfolio-item {
     background-color: whitesmoke;
     margin: auto 0.5% 0.9%;
     -ms-grid-column-align: center;
@@ -161,16 +177,18 @@ body {
     -webkit-box-flex: 33%;
     -ms-flex: 33%;
     flex: 33%;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(51,51,51,0.77);
-    box-shadow: 0px 5px 5px 0px rgba(51,51,51,0.77);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(51, 51, 51, 0.77);
+    box-shadow: 0px 5px 5px 0px rgba(51, 51, 51, 0.77);
     border-radius: 3px;
-
 }
+
 /* MISC STYLING */
-.list-item{
+
+.list-item {
     font-size: 1.125em;
 }
-.contact-form{
+
+.contact-form {
     width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -183,42 +201,49 @@ body {
     flex-wrap: wrap;
 }
 
-.contact-form button, input, select, textarea {
-    border  : none;
-    padding : 8px;
-    margin  : auto 0.5% 0.5%;
-    font-family : inherit;
-    font-size   : 100%;
+.contact-form button,
+input,
+select,
+textarea {
+    border: none;
+    padding: 8px;
+    margin: auto 0.5% 0.5%;
+    font-family: inherit;
+    font-size: 100%;
     width: 100%;
     background: none;
     border-bottom: 1px solid #333;
-    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */ /* For legacy (Firefox <29) Gecko based browsers */
+    -webkit-box-sizing: border-box;
+    /* For legacy WebKit based browsers */
+    /* For legacy (Firefox <29) Gecko based browsers */
     box-sizing: border-box;
 }
-.contact-form textarea{
+
+.contact-form textarea {
     resize: none;
     height: 200px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-.contact-btn{
+
+.contact-btn {
     text-align: center;
     background-color: #a0d3cc;
     color: whitesmoke;
     border-radius: 3px;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(51,51,51,0.77);
-    box-shadow: 0px 5px 5px 0px rgba(51,51,51,0.77);
-
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(51, 51, 51, 0.77);
+    box-shadow: 0px 5px 5px 0px rgba(51, 51, 51, 0.77);
 }
-.contact-btn a{
+
+.contact-btn a {
     font-size: 2em;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-
 }
+
 footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -229,154 +254,56 @@ footer {
     flex-direction: row;
     padding: 0;
 }
-footer a{
+
+footer a {
     -ms-flex-item-align: end;
     align-self: flex-end;
     text-decoration: none;
     color: #333;
     cursor: pointer;
 }
-.subheading{
+
+.subheading {
     font-size: 1.5em;
 }
-/* animations */
-@-webkit-keyframes fade-in-right {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-@keyframes fade-in-right {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-@-webkit-keyframes fade-in{
-    0% {
-        opacity: 0;
-
-    }
-
-    100% {
-        opacity: 1;
-
-    }
-}
-@keyframes fade-in{
-    0% {
-        opacity: 0;
-
-    }
-
-    100% {
-        opacity: 1;
-
-    }
-}
-
-.fade-in-right {
-    -webkit-animation-name: fade-in-right;
-    -webkit-animation: fade-in-right 1s both ;
-    animation: fade-in-right 1s both ;
-}
-@-webkit-keyframes fade-in-left {
-    0%{
-        opacity: 0;
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
-    50% {
-        opacity: 0;
-        -webkit-transform: translate3d(50%, 0, 0);
-        transform: translate3d(50%, 0, 0);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-@keyframes fade-in-left {
-    0%{
-        opacity: 0;
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
-    50%{
-        opacity: 0.5;
-        -webkit-transform: translate3d(-50%, 0, 0);
-        transform: translate3d(-50%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-.fade-in-left {
-    -webkit-animation-name: fade-in-left;
-    -webkit-animation: fade-in-left 1s both ;
-    animation: fade-in-left 1s both ;
-}
-
 
 @media all and (max-width: 400px) {
     /* Mobile Query */
-    .container{
+    .container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    .nav-bar > li {
+    .nav-bar>li {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
-    .toggle{
-        display:none;
+    .toggle {
+        display: none;
     }
-    .nav-toggle{
+    .nav-toggle {
         display: initial;
     }
-    .portfolio-column{
+    .portfolio-column {
         width: 100%;
     }
 }
+
 @media all and (max-width: 768px) {
     /* tablet Query */
-    .container{
+    .container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    .nav-bar {
-
-    }
-
-    .nav-bar > li {
+    .nav-bar>li {
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     }
 }
 
-.portfolio-column{
+.portfolio-column {
     width: 50%;
 }
